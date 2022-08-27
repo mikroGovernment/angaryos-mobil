@@ -31,8 +31,19 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": [],
+            "styles": [
+			  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/themes/aero/assets/css/style.min.css",
+              "src/assets/themes/aero/assets/plugins/jquery-steps/jquery.steps.css",
+              "src/assets/ext_modules/select2/select2.min.css"
+			],
+            "scripts": [
+			  "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/moment/min/moment-with-locales.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+			],
             "aot": false,
             "vendorChunk": true,
             "extractLicenses": false,
@@ -171,6 +182,7 @@
     }
   },
   "cli": {
+    "analytics": false,
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
